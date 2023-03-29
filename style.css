@@ -4,6 +4,10 @@
   font-family: 'Noto Sans JP', sans-serif
 }
 
+body {
+  background-color: rgb(30, 144, 238);
+}
+
 /* toggle */
 .toggle {
   --width: 80px;
@@ -111,9 +115,13 @@
   gap: 30px;
 }
 
+form label {
+  font-weight: 600;
+}
+
 #main input {
   border-radius: 10px;
-  background-color: rgb(184, 166, 155);
+  background-color: rgb(213, 216, 202);
   border: none;
   color: rgb(10, 6, 6);
 }
@@ -124,6 +132,7 @@
 
 input[type=submit] {
   padding: 0.5rem;
+  font-weight: 600;
 }
 
 #header > h2 {
@@ -152,4 +161,6 @@ input[type=submit] {
   padding: 0.6rem;
   border-radius: 25px;
   border: 1px solid;
+  background: linear-gradient(to right, rgb(132, 165, 173), rgb(17, 96, 116));
 }
+

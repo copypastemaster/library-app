@@ -103,7 +103,7 @@ function displayBook(arr) {
     span2.setAttribute('data-on', 'YES');
     span2.setAttribute('data-off', 'NO');
     span3.innerText = 'READ?';
-    span3.style = 'position: relative; right: 60px; bottom: 10px;';
+    span3.style = 'position: relative; right: 60px; bottom: 15px;';
 
     toggles.appendChild(inputs);
     toggles.appendChild(span1);
