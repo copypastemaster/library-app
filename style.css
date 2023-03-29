@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Noto+Sans+JP:wght@300&family=Nunito+Sans:ital,wght@1,200&family=Roboto:wght@300;400&family=Shantell+Sans:ital,wght@1,300&family=Tilt+Prism&display=swap');
+
+* {
+  font-family: 'Noto Sans JP', sans-serif
+}
+
 /* toggle */
 .toggle {
   --width: 80px;
@@ -103,6 +109,21 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+#main input {
+  border-radius: 10px;
+  background-color: rgb(184, 166, 155);
+  border: none;
+  color: rgb(10, 6, 6);
+}
+
+#main input:focus {
+  border: none;
+}
+
+input[type=submit] {
+  padding: 0.5rem;
 }
 
 #header > h2 {
