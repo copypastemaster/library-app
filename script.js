@@ -58,15 +58,22 @@ submits.addEventListener('click', (e) => {
   page.value = '';
 
   const cont = document.createElement('div');
-  cont.style = 'border: 1px solid';
   const titleCont = document.createElement('p');
   const authorCont = document.createElement('p');
   const pageCont = document.createElement('p');
+  const rms = document.createElement('input');
+  // rms.style = 'position: absolute;';
 
   titleCont.innerText = `Book: ${user.title}`;
   authorCont.innerText = `By: ${user.author}`;
   pageCont.innerText = `with ${user.page} pages`;
+  rms.type = 'button';
+  rms.value = 'x';
+  rms.addEventListener('click', () => {
+    appended.removeChild(cont);
+  });
 
+  cont.appendChild(rms);
   cont.appendChild(titleCont);
   cont.appendChild(authorCont);
   cont.appendChild(pageCont);
@@ -104,6 +111,13 @@ function displayBook(arr) {
     toggles.appendChild(span3);
 
     const newContainer = document.createElement('div');
+    const rm = document.createElement('input');
+    rm.type = 'button';
+    rm.value = 'x';
+    rm.addEventListener('click', () => {
+      appended.removeChild(newContainer);
+    });
+    newContainer.appendChild(rm);
     // newContainer.style = 'border: 1px solid;';
 
     const newTitle = document.createElement('p');
@@ -120,7 +134,6 @@ function displayBook(arr) {
 
     newContainer.appendChild(toggles);
     appended.appendChild(newContainer);
-    return appended;
   });
 }
 displayBook(myLibrary);
