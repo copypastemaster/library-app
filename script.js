@@ -10,10 +10,10 @@ const appended = document.querySelector('#appendedBooks');
 
 let myLibrary = []; // storage of objects
 
-const hp = new Book('hp', 'jk rowling', 2000);
+const hp = new Book('Harry Potter', 'JK Rowling', 3407);
 myLibrary.push(hp);
 
-const got = new Book('got', 'grrm', 2300);
+const got = new Book('Game of Thrones', 'George RR. Martin', 4302);
 myLibrary.push(got);
 
 function Book(title, author, page) {
@@ -79,7 +79,7 @@ submits.addEventListener('click', (e) => {
   cont.appendChild(pageCont);
   cont.appendChild(toggles);
 
-  if (user.title == '' || user.author == '') {
+  if (user.title == '' || user.author == '' || user.page == '') {
     alert('Please input fields!');
     e.preventDefault();
   } else {
